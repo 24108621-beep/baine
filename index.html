@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Khanh Ly 24108621 - Cửa hàng công nghệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#trang-chu" class="logo">Hoang Khanh Ly</a>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <nav class="main-nav" id="mainNav">
+                <a class="active" href="#trang-chu">Trang chủ</a>
+                <a href="#dien-thoai">Điện thoại</a>
+                <a href="#phu-kien">Phụ kiện</a>
+                <a href="#may-tinh-bang">Máy tính bảng</a>
+                <a href="#dong-ho">Đồng hồ thông minh</a>
+                <a href="#tin-tuc">Tin tức</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button" id="searchButton" title="Tìm kiếm">⌕</button>
+                <button class="icon-button" id="accountButton" title="Tài khoản">♙</button>
+                <button class="icon-button cart-button" id="cartButton" title="Giỏ hàng">
+                    🛒<span id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="trang-chu">
+
+        <!-- BA BANNER DANH MỤC -->
+        <section class="category-banners">
+
+            <a href="#dien-thoai" class="banner banner-blue">
+                <div>
+                    <h2>Điện thoại iPhone</h2>
+                    <p>iPhone 16 Pro Max</p>
+                    <p>iPhone 16 Pro</p>
+                    <p>iPhone 16</p>
+                    <p>iPhone 15</p>
+                </div>
+                <img src="images/ip17prm.jpg"
+                     alt="Điện thoại iPhone">
+            </a>
+
+            <a href="#dien-thoai" class="banner banner-pink">
+                <div>
+                    <h2>Điện thoại Samsung</h2>
+                    <p>Galaxy S25 Ultra</p>
+                    <p>Galaxy S25</p>
+                    <p>Galaxy A56</p>
+                    <p>Galaxy A36</p>
+                </div>
+                <img src="images/samsung.jpg"
+                     alt="Điện thoại Samsung">
+            </a>
+
+            <a href="#phu-kien" class="banner banner-green">
+                <div>
+                    <h2>Phụ kiện điện thoại</h2>
+                    <p>Ốp lưng</p>
+                    <p>Tai nghe Bluetooth</p>
+                    <p>Cáp sạc</p>
+                    <p>Sạc dự phòng</p>
+                </div>
+                <img src="images/airport 4.jpg"
+                     alt="Tai nghe và phụ kiện">
+            </a>
+
+        </section>
+
+        <!-- SẢN PHẨM NỔI BẬT -->
+        <section class="featured" id="dien-thoai">
+            <h1>Nổi bật trong tuần</h1>
+
+            <div class="filter-tabs">
+                <button class="filter-btn selected" data-filter="bestseller">
+                    Bán chạy nhất
+                </button>
+                <button class="filter-btn" data-filter="new">
+                    Hàng mới về
+                </button>
+                <button class="filter-btn" data-filter="sale">
+                    Đang giảm giá
+                </button>
+                <button class="filter-btn" data-filter="rating">
+                    Đánh giá cao
+                </button>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- SẢN PHẨM 1 -->
+                <article class="product-card" data-tags="bestseller sale rating">
+                    <span class="sale-label">Giảm giá</span>
+
+                    <button class="product-image" data-product="iphone">
+                        <img src="images/ngang.jpg"
+                             alt="iPhone 16 Pro Max">
+                    </button>
+
+                    <h3>iPhone 16 Pro Max 256GB</h3>
+                    <p class="price">
+                        32.990.000đ
+                        <del>36.990.000đ</del>
+                    </p>
+
+                    <button class="detail-btn" data-product="iphone">
+                        Xem chi tiết
+                    </button>
+                </article>
+
+                <!-- SẢN PHẨM 2 -->
+                <article class="product-card" data-tags="bestseller new rating">
+                    <button class="product-image" data-product="airpods">
+                        <img src="images/airport 4.jpg"
+                             alt="Tai nghe Bluetooth">
+                    </button>
+
+                    <h3>Tai nghe Bluetooth AirPods 4</h3>
+                    <p class="price">4.990.000đ</p>
+
+                    <button class="detail-btn" data-product="airpods">
+                        Xem chi tiết
+                    </button>
+                </article>
+
+                <!-- SẢN PHẨM 3 -->
+                <article class="product-card" data-tags="new sale">
+                    <button class="product-image" data-product="samsung">
+                        <img src="images/hinhip.jpg"
+                             alt="Samsung Galaxy S25 Ultra">
+                    </button>
+
+                    <h3>Samsung Galaxy S25 Ultra 256GB</h3>
+                    <p class="price">28.990.000đ</p>
+
+                    <button class="detail-btn" data-product="samsung">
+                        Xem chi tiết
+                    </button>
+                </article>
+
+                <!-- SẢN PHẨM 4 -->
+                <article class="product-card" data-tags="bestseller sale">
+                    <button class="product-image" data-product="powerbank">
+                        <img src="images/sdp ngang.jpg"
+                             alt="Sạc dự phòng">
+                    </button>
+
+                    <h3>Sạc dự phòng 20000mAh</h3>
+                    <p class="price">650.000đ</p>
+
+                    <button class="detail-btn" data-product="powerbank">
+                        Xem chi tiết
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- BỘ SƯU TẬP ẢNH -->
+        <section class="accessories" id="phu-kien">
+            <h2>#hoangkhanhly</h2>
+
+            <div class="mini-grid">
+                <a href="#dien-thoai">
+                    <img src="images/dienthoai.jpg"
+                         alt="Điện thoại trên tay">
+                </a>
+
+                <a href="#dien-thoai">
+                    <img src="images/dienthoai2.jpg"
+                         alt="Điện thoại màu xanh">
+                </a>
+
+                <a href="#dien-thoai">
+                    <img src="images/anhngang.jpg"
+                         alt="Khách hàng sử dụng điện thoại">
+                </a>
+
+                <a href="#dien-thoai">
+                    <img src="images/duo.jpg"
+                         alt="Điện thoại thông minh">
+                </a>
+
+                <a href="#dien-thoai">
+                    <img src="images/airport 4.jpg"
+                         alt="Tai nghe không dây">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- CHÂN TRANG -->
+    <footer class="site-footer" id="tin-tuc">
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Danh mục</h3>
+                <a href="#dien-thoai">Điện thoại</a>
+                <a href="#phu-kien">Phụ kiện</a>
+                <a href="#may-tinh-bang">Máy tính bảng</a>
+                <a href="#dong-ho">Đồng hồ thông minh</a>
+            </div>
+
+            <div>
+                <h3>Tài khoản</h3>
+                <a href="#" data-notice="Vui lòng đăng nhập để xem tài khoản.">
+                    Tài khoản của bạn
+                </a>
+                <a href="#" data-notice="Tính năng đơn hàng đang được cập nhật.">
+                    Đơn hàng của tôi
+                </a>
+                <a href="#" data-notice="Vui lòng liên hệ cửa hàng để đổi trả.">
+                    Đổi trả & Hoàn tiền
+                </a>
+            </div>
+
+            <div>
+                <h3>Dịch vụ khách hàng</h3>
+                <a href="#" data-notice="Hỗ trợ thanh toán tiền mặt và chuyển khoản.">
+                    Phương thức thanh toán
+                </a>
+                <a href="#" data-notice="Đơn hàng được giao theo địa chỉ của bạn.">
+                    Chính sách vận chuyển
+                </a>
+                <a href="#" data-notice="Sản phẩm được bảo hành theo chính sách cửa hàng.">
+                    Chính sách bảo hành
+                </a>
+            </div>
+
+            <div class="newsletter">
+                <h3>Đăng ký nhận tin</h3>
+
+                <form id="newsletterForm">
+                    <input type="email" id="emailInput"
+                           placeholder="Nhập email của bạn" required>
+                    <button type="submit">Đăng ký</button>
+
+                    <div class="checks">
+                        <label><input type="checkbox"> Nam</label>
+                        <label><input type="checkbox"> Nữ</label>
+                        <label><input type="checkbox" checked> Khuyến mãi</label>
+                    </div>
+                </form>
+
+                <p id="newsletterMessage" class="form-message"></p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <span>Hoang Khanh Ly. Tất cả quyền được bảo lưu.</span>
+            <div class="social-links">
+                <a href="#tin-tuc">f</a>
+                <a href="#tin-tuc">▶</a>
+                <a href="#tin-tuc">♪</a>
+                <a href="#tin-tuc">◎</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CỬA SỔ CHI TIẾT SẢN PHẨM -->
+    <div class="modal-backdrop" id="productModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalClose">×</button>
+
+            <img id="modalImage" src="" alt="">
+
+            <div>
+                <p class="eyebrow">SẢN PHẨM NỔI BẬT</p>
+                <h2 id="modalTitle"></h2>
+                <p id="modalPrice" class="price"></p>
+                <p id="modalDescription"></p>
+
+                <button class="primary-btn" id="addToCart">
+                    Thêm vào giỏ hàng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
